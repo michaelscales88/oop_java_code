@@ -1,4 +1,4 @@
-package problem3.example;
+package src;
 import java.io.*;
 
 class FileOpener {
