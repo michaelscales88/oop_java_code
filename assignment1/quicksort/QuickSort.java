@@ -1,4 +1,4 @@
-package src;
+package quicksort;
 
 public class QuickSort {
 
@@ -20,16 +20,17 @@ public class QuickSort {
         System.out.println("]");
     }
 
-    void quick_sort(int[] my_numbers, int left, int right) {
+    void quick_sort(int[] my_numbers, int left, int right)
+    {
         if (my_numbers == null || my_numbers.length == 0) return;
         if (left >= right) return;
         int pivot_idx = (left + (right - left)) / 2;
         int i = left, j = right;
         while (i <= j)
         {
-            // Find where value larger than pivot
+            // Find where lhs value larger than pivot
             while (my_numbers[i] < my_numbers[pivot_idx]) i++;
-            // Find where the lower value than pivot
+            // Find where the rhs value is smaller than pivot
             while (my_numbers[j] > my_numbers[pivot_idx]) j--;
 
             if (i <= j)
@@ -56,7 +57,8 @@ public class QuickSort {
         print(my_numbers);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         QuickSort s1 = new QuickSort(args[0], Integer.parseInt(args[1]));
         s1.sort_asc();
     }
