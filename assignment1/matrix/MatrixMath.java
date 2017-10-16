@@ -13,17 +13,17 @@ public class MatrixMath{
 			"-----------------------------------------"	+ "\n" +
 			"1. Generate 2 matricies of size (N x M)."	+ "\n" +
 			"2. Assign random values."							+ "\n" +
-			"3. Manual value entry."							+ "\n" +
-			"4. Display matrix values."						+ "\n" +
-			"5. Add matricies and display result."			+ "\n" +
-			"6. Multiply matricies and display result."	+ "\n" +
-			"7. Quit."												+ "\n\n");
+			"3. Display matrix values."						+ "\n" +
+			"4. Add matricies and display result."			+ "\n" +
+			"5. Multiply matricies and display result."	+ "\n" +
+			"6. Quit."												+ "\n\n");
 
 		return getEntry(CHOICE_LOW, CHOICE_HIGH);
 	}
 
 	public boolean choice(int option){
 		int rows = 1, cols = 1, MIN_SIZE = 2, MAX_SIZE = 20;
+		String nullMessage = "Matricies have not yet been generated.";
 
 		switch(option){
 			case 1:
@@ -41,42 +41,39 @@ public class MatrixMath{
 				}
 				break;
 			case 2:
-				for(Matrix x : matrixSet)
-					x.randValues();
+				try{
+					for(Matrix x : matrixSet)
+						x.randValues();
+				}
+				catch(NullPointerException e){
+					System.out.println(nullMessage);
+				}
 				break;
 			case 3:
-				if((rows > 1) && (cols > 1)){
-					for( int i = 0; i < matrixSet.length; i++ ){
-						System.out.println("Matrix " + i );
-						for( int x = 0; x < rows; x++ )
-							for( int y = 0; y < cols; y++ )
-								matrixSet[i].setValue(x, y, getEntry(0, 99));
-					}
+				try{
+					displaySet();
 				}
-				displaySet();
+				catch(NullPointerException e){
+					System.out.println(nullMessage);
+				}
 				break;
 			case 4:
-				displaySet();
+				try{
+					new Matrix(matrixSet[0].add(matrixSet[1])).showValues();
+				}
+				catch(NullPointerException e){
+					System.out.println(nullMessage);
+				}
 				break;
 			case 5:
 				try{
-					new Matrix(matrixSet[0].add(matrixSet[1])).showValues();
-					//matrixSet[0].showValues();
+					new Matrix(matrixSet[0].multiply(matrixSet[1])).showValues();
 				}
 				catch(NullPointerException e){
-					System.out.println("Matricies have not yet been created.");
+					System.out.println(nullMessage);
 				}
 				break;
 			case 6:
-				try{
-					new Matrix(matrixSet[0].multiply(matrixSet[1])).showValues();
-					//matrixSet[0].showValues();
-				}
-				catch(NullPointerException e){
-					System.out.println("Matricies have not yet been created.");
-				}
-				break;
-			case 7:
 			default:
 				return true;
 		}
