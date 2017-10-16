@@ -9,14 +9,14 @@ class Matrix{
 		rows = 2;
 		cols = 2;
 		matrix = new int[rows][cols];
-		init();
+		randValues()
 	}
 
 	public Matrix(int newRows, int newCols){
 		rows = newRows;
 		cols = newCols;
 		matrix = new int[rows][cols];
-		init();
+		randValues()
 	}
 
 	public Matrix(Matrix copy){
