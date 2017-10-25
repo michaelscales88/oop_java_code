@@ -1,3 +1,3 @@
 #!/bin/bash
 
-javac FileOpener.java LinkNode.java Dictionary.java
+javac FileOpener.java KeyNode.java ValueNode.java Dictionary.java
