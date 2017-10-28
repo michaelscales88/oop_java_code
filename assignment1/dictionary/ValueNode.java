@@ -14,9 +14,4 @@ public class ValueNode
    {
       this.link = link;
    }
-
-   public void print_key_val()
-   {
-      System.out.println("v: " + value);
-   }
 }
