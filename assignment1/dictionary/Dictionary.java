@@ -12,7 +12,7 @@ public class Dictionary
    private int num_vals = 0;
    private String[] tokens;
 
-   private void load(String[] raw_lines)
+   public void load(String[] raw_lines)
    {
       String key, raw_vals;
       for (String raw_line: raw_lines)
@@ -31,15 +31,11 @@ public class Dictionary
    {
       KeyNode cursor = head_node;
       boolean found = false;
-      do
+      while (cursor != null && !found)
       {
-         if (cursor.key.equals(key))
-         {
-            found = true;
-            break;
-         }
-         cursor = cursor.link;
-      } while (cursor != null);
+         if (cursor.key.equals(key)) found = true;
+         else cursor = cursor.link;
+      }
       if (found) return cursor;
       System.out.println("Key not found.");
       return null;
