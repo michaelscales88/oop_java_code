@@ -1,0 +1,36 @@
+Closing: dictionary/dictionary.in
+Printing entire dict: 
+ 
+Num Keys/Values: 6/18
+ 
+apple: fruit, computer.
+dog: animal, friend, pal.
+job: fun, money, skills.
+house: balconey, apartment.
+piano: music, heavy, lovely.
+apartment: home, rent, cheap.
+ 
+ 
+Testing present word: apple.
+apple: fruit, computer.
+ 
+Testing not present word: bob.
+Key not found.
+Key not found. No values to print
+ 
+Completed searching for bob and apple.
+ 
+ 
+Deleting key 'apple'.
+ 
+Print showing that apple was removed.
+ 
+Num Keys/Values: 5/16
+ 
+dog: animal, friend, pal.
+job: fun, money, skills.
+house: balconey, apartment.
+piano: music, heavy, lovely.
+apartment: home, rent, cheap.
+ 
+Completed testing delete.
