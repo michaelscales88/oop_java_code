@@ -1,65 +1,75 @@
 package quicksort;
 
-public class QuickSort {
+import java.io.IOException;
+import java.util.logging.*;
 
-    private String file_name;
-    private int size;
+public class QuickSort
+{
+   private final static Logger LOGGER = Logger.getLogger(QuickSort.class.getName());
+   private int[] my_nums;
+   private Printer printer = new Printer();
 
-    QuickSort(String file_name, int size)
-    {
-        this.size = size;
-        this.file_name = file_name;
-    }
+   private void swap(int i, int j)
+   {
+      int temp = my_nums[i];
+      my_nums[i] = my_nums[j];
+      my_nums[j] = temp;
+   }
 
-    private void print(int[] my_numbers)
-    {
-        System.out.print("My numbers: [ ");
-        for (int number : my_numbers) {
-            System.out.print(number + " ");
-        }
-        System.out.println("]");
-    }
+   private int partition(int first, int last)
+   {
+      int pivot = my_nums[first], i = first, j = last;
+      while (true)
+      {
+         // Find where lhs value larger than pivot
+         while (my_nums[i] < pivot) i++;
+         // Find where the rhs value is smaller than pivot
+         while (my_nums[j] > pivot) j--;
 
-    void quick_sort(int[] my_numbers, int left, int right)
-    {
-        if (my_numbers == null || my_numbers.length == 0) return;
-        if (left >= right) return;
-        int pivot_idx = (left + (right - left)) / 2;
-        int i = left, j = right;
-        while (i <= j)
-        {
-            // Find where lhs value larger than pivot
-            while (my_numbers[i] < my_numbers[pivot_idx]) i++;
-            // Find where the rhs value is smaller than pivot
-            while (my_numbers[j] > my_numbers[pivot_idx]) j--;
+         if (i < j) swap(i, j);
+         else return j;
+      }
+   }
 
-            if (i <= j)
-            {
-                int temp = my_numbers[i];
-                my_numbers[i] = my_numbers[j];
-                my_numbers[j] = temp;
-                i++;
-                j--;
-            }
-        }
-        if (left < j)
-            quick_sort(my_numbers, left, j);
+   private void quick_sort(int left, int right)
+   {
+      if (left < right)
+      {
+         int mid = partition(left, right);
+         quick_sort(left, mid);
+         quick_sort(mid + 1, right);
+      }
+   }
 
-        if (right > i)
-            quick_sort(my_numbers, i, right);
-    }
+   public void sort_asc(int[] numbers)
+   {
+      if (numbers == null || numbers.length == 0) return;
+      my_nums = numbers;
+      printer.print(my_nums);
+      quick_sort(0, my_nums.length - 1);
+      printer.print(my_nums);
+   }
 
-    void sort_asc()
-    {
-        int[] my_numbers = FileOpener.open_file(file_name, size);
-        print(my_numbers);
-        quick_sort(my_numbers,0, size - 1);
-        print(my_numbers);
-    }
+   public static void main(String[] args) throws IOException
+   {
+      // Configure logger and handler
+      Handler fh = new FileHandler("quicksort/test.log", true);
+      fh.setFormatter(new SimpleFormatter());
+      LOGGER.addHandler(fh);
+      LOGGER.setLevel(Level.INFO);
+      LOGGER.info("Logging begins...");
 
-    public static void main(String[] args)
-    {
-        QuickSort s1 = new QuickSort(args[0], Integer.parseInt(args[1]));
-        s1.sort_asc();
-    }
+      QuickSort s1 = new QuickSort();
+
+      // Parse CLI arguments
+      int[] numbers = FileOpener.open_file(args[0], Integer.parseInt(args[1]));
+
+      // Test sort ascending
+      s1.sort_asc(numbers);
+
+      LOGGER.info("Logging ended.");
+      // Close log file
+      fh.flush();
+      fh.close();
+   }
 }
