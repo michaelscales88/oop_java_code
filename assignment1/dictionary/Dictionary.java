@@ -27,7 +27,7 @@ public class Dictionary
       }
    }
 
-   public KeyNode get_key(String key)
+   public KeyNode get(String key)
    {
       KeyNode cursor = head_node;
       boolean found = false;
@@ -70,7 +70,7 @@ public class Dictionary
    private void del_key(String key)
    {
       KeyNode cursor = head_node, prev_node = null;
-      while(cursor != null)
+      while (cursor != null)
       {
          if (cursor.key.equals(key))
          {
@@ -144,9 +144,9 @@ public class Dictionary
       // Find key and print values
       LOGGER.info("Begin search for key");
       KeyNode k_node = null;
-      k_node = dict.get_key("apple");
+      k_node = dict.get("apple");
       if (k_node != null) k_node.print_values();
-      k_node = dict.get_key("bob");
+      k_node = dict.get("bob");
       if (k_node != null) k_node.print_values();
       LOGGER.info("Completed search for key.");
 

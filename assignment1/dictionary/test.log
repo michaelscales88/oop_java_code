@@ -464,3 +464,23 @@ Oct 28, 2017 5:26:50 PM dictionary.Dictionary main
 INFO: Completed search for key.
 Oct 28, 2017 5:26:50 PM dictionary.Dictionary main
 INFO: Logging ended.
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Logging begins...
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Begin loading keys/values...
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Completed loading keys and values
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Begin printing all key/value pairs.
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Completed printing key/value pairs.
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Begin search for key
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Completed search for key.
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Completed search for key.
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Completed search for key.
+Oct 29, 2017 8:50:51 PM dictionary.Dictionary main
+INFO: Logging ended.
