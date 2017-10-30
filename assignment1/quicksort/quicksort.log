@@ -94,3 +94,15 @@ Oct 30, 2017 3:03:39 PM quicksort.QuickSort main
 INFO: Completed partitioned Quicksort.
 Oct 30, 2017 3:03:39 PM quicksort.QuickSort main
 INFO: Logging ended.
+Oct 30, 2017 3:12:03 PM quicksort.QuickSort main
+INFO: Logging begins...
+Oct 30, 2017 3:12:03 PM quicksort.QuickSort main
+INFO: Start non-partitioned Quicksort.
+Oct 30, 2017 3:12:03 PM quicksort.QuickSort main
+INFO: Completed non-partitioned Quicksort.
+Oct 30, 2017 3:12:03 PM quicksort.QuickSort main
+INFO: Start partitioned Quicksort.
+Oct 30, 2017 3:12:03 PM quicksort.QuickSort main
+INFO: Completed partitioned Quicksort.
+Oct 30, 2017 3:12:03 PM quicksort.QuickSort main
+INFO: Logging ended.
