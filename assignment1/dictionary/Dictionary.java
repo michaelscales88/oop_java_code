@@ -2,7 +2,6 @@ package dictionary;
 
 import java.io.IOException;
 import java.util.logging.*;
-import java.util.Arrays;
 
 public class Dictionary 
 {
@@ -27,7 +26,7 @@ public class Dictionary
       }
    }
 
-   public KeyNode get_key(String key)
+   public KeyNode get(String key)
    {
       KeyNode cursor = head_node;
       boolean found = false;
@@ -37,12 +36,14 @@ public class Dictionary
          else cursor = cursor.link;
       }
       if (found) return cursor;
+      // null value represents non existent key
       System.out.println("Key not found.");
       return null;
    }
 
    private void make_head(String key, String value)
    {
+      // Make the first instance of a KeyNode
       head_node = new KeyNode(key, new ValueNode(value));
       num_keys++;
       num_vals++;
@@ -66,11 +67,13 @@ public class Dictionary
    private void del_key(String key)
    {
       KeyNode cursor = head_node, prev_node = null;
-      while(cursor != null)
+      while (cursor != null)
       {
          if (cursor.key.equals(key))
          {
+            // Replace the head_node if key is the first node
             if (cursor == head_node) head_node = cursor.link;
+            // Remove the link to key to  delete
             else prev_node.link = cursor.link;
             num_keys--;
             num_vals -= cursor.num_vals;
@@ -91,7 +94,7 @@ public class Dictionary
             KeyNode cursor = head_node;
             // Find the key
             while (cursor.link != null
-                   && cursor.key != key) cursor = cursor.link;
+                   && !cursor.key.equals(key)) cursor = cursor.link;
             // Add value to existing KeyNode
             if (cursor.key.equals(key)) add_val(cursor, value);
             // Create a new KeyNode and ValueNode
@@ -103,6 +106,7 @@ public class Dictionary
    public void print()
    {
       System.out.println("Num Keys/Values: " + num_keys + "/" + num_vals);
+      System.out.println(" ");
       KeyNode cursor = head_node;
       while (cursor != null)
       {
@@ -111,46 +115,72 @@ public class Dictionary
       }
    }
 
+   public void query(String key)
+   {
+      KeyNode k_node = get(key);
+      if (k_node != null) k_node.print_values();
+      else System.out.println("Key not found. No values to print");
+   }
+
    public static void main(String[] args) throws IOException
    {
       // Configure logger and handler
-      Handler fh = new FileHandler("dictionary/test.log", true);
+      Handler fh = new FileHandler("dictionary/dictionary.log", true);
       fh.setFormatter(new SimpleFormatter());
       LOGGER.addHandler(fh);
       LOGGER.setLevel(Level.INFO);
       LOGGER.info("Logging begins...");
+
       // Parse CLI arguments
       String file_name = args[0];
-      int array_size = Integer.parseInt(args[1]);
+
+      FileOpener rdr = new FileOpener(args[0], "dictionary/dictionary.out");
+      String[] raw_lines = rdr.read();
 
       // Create a dictionary and run the test
       Dictionary dict = new Dictionary();
-      String[] raw_lines = FileOpener.open_file(file_name, array_size);
 
       // Load file
       LOGGER.info("Begin loading keys/values...");
       dict.load(raw_lines);
-      LOGGER.info("Completed loading keys and values");
+      LOGGER.info("Completed loading keys and values.");
 
-      // Show all key value pairs
+      // Print/traverse test
       LOGGER.info("Begin printing all key/value pairs.");
+      System.out.println("Printing entire dict: ");
+      System.out.println(" ");
       dict.print();
+      System.out.println(" ");
+      System.out.println(" ");
       LOGGER.info("Completed printing key/value pairs.");
 
-      // Find key and print values
-      LOGGER.info("Begin search for key");
-      KeyNode k_node = null;
-      k_node = dict.get_key("apple");
-      if (k_node != null) k_node.print_values();
-      k_node = dict.get_key("bob");
-      if (k_node != null) k_node.print_values();
-      LOGGER.info("Completed search for key.");
+      // Search test
+      LOGGER.info("Begin search for key.");
+      System.out.println("Testing present word: apple.");
+      dict.query("apple");
+      System.out.println(" ");
+      System.out.println("Testing not present word: bob.");
+      dict.query("bob");
+      System.out.println(" ");
+      System.out.println("Completed searching for bob and apple.");
+      System.out.println(" ");
+      System.out.println(" ");
 
-      LOGGER.info("Completed search for key.");
+      LOGGER.info("Completed key search.");
+
+      // Delete test
+      LOGGER.info("Testing dictionary delete key.");
+      System.out.println("Deleting key 'apple'.");
       dict.del_key("apple");
+      System.out.println(" ");
+      System.out.println("Print showing that apple was removed.");
+      System.out.println(" ");
       dict.print();
-      LOGGER.info("Completed search for key.");
+      System.out.println(" ");
+      System.out.println("Completed testing delete.");
+      LOGGER.info("Completed delete test.");
       LOGGER.info("Logging ended.");
+
       // Close log file
       fh.flush();
       fh.close();
