@@ -19,7 +19,7 @@ public class Dictionary
       {
          if (raw_line != null)
          {
-            tokens = Tokenizer.tokenize(raw_line, " => ");
+            tokens = Tokenizer.tokenize(raw_line, "=>");
             key = tokens[0];
             raw_vals = tokens[1];
             add_kv_pair(key, raw_vals);
@@ -87,7 +87,8 @@ public class Dictionary
 
    private void add_kv_pair(String key, String raw_vals)
    {
-      for (String value: Tokenizer.tokenize(raw_vals, ", "))
+      System.out.println(raw_vals.trim());
+      for (String value: Tokenizer.tokenize(raw_vals, ","))
       {
          // Make the first key-value pair in the linked list
          if (head_node == null) make_head(key, value);
@@ -95,7 +96,7 @@ public class Dictionary
             KeyNode cursor = head_node;
             // Find the key
             while (cursor.link != null
-                   && cursor.key != key) cursor = cursor.link;
+                   && !cursor.key.equals(key)) cursor = cursor.link;
             // Add value to existing KeyNode
             if (cursor.key.equals(key)) add_val(cursor, value);
             // Create a new KeyNode and ValueNode
@@ -131,6 +132,8 @@ public class Dictionary
       Dictionary dict = new Dictionary();
       String[] raw_lines = FileOpener.open_file(file_name, array_size);
 
+      for (String line: raw_lines)
+         System.out.println(line.trim());
       // Load file
       LOGGER.info("Begin loading keys/values...");
       dict.load(raw_lines);
