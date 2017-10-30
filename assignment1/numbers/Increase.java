@@ -1,52 +1,49 @@
 package numbers;
+import java.util.Stack;
 import java.util.Vector;
-import java.util.Enumeration;
 
-class Increase{
-
-	private int n;
-	private Vector<Integer> list;
+class Increase extends Numbers{
 
 	public Increase(){
-		n = 1;
-		list = new Vector<>(n * 10, 10);
+		super();
+		getMax();
+		super.buildList();
 	}
 
 	public Increase(int newN){
-		n = newN;
-		list = new Vector<>(n * 10, 10);
+		super(newN);
+		getMax();
+		super.buildList();
 	}
 
-	public void calc(){
-		int num = 0, max = (int) Math.pow(10, n);;
-		boolean valid = true;
-		String numString = "";
-
-		while(num < max){
-			numString = new Integer(num).toString();
-
-			while(numString.length() < n)
-				numString = "0" + numString;
-
-			valid = true;
-			if(n > 1)
-				for(int x = 1; x < numString.length(); x++)
-					if(numString.charAt(x-1) >= numString.charAt(x))
-						valid = false;
-
-			if(valid)
-				list.addElement(num);
-			num++;
-		}
+	private void getMax(){
+		max = (int) Math.pow(10, n);
 	}
 
-	public void show(){
-		System.out.println("For n = " + n + ":");
-		Enumeration eList = list.elements();
+	private String getNumString(int num){
+		return super.leadZeros(Integer.toString(num));
+	}
 
-		while(eList.hasMoreElements()){
-			System.out.print(eList.nextElement() + " ");
+	private boolean check(String numString){
+		if(n > 1)
+			for(int x = 1; x < numString.length(); x++){
+				if(numString.charAt(x-1) >= numString.charAt(x))
+					return false;
+			}
+		return true;
+	}
+
+	public Vector<String> getList(){
+		//System.out.println("For n = " + n + ":");
+		Vector<String> incList = new Vector<>();
+		String num = "";
+		while(!list.empty()){
+			num = getNumString(list.pop());
+			if(check(num))
+				incList.addElement(num);
+				//System.out.print(num + " ");
 		}
-		System.out.println();
+		return incList;
+		//System.out.println("\n");
 	}
 }
