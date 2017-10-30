@@ -99,20 +99,36 @@ public class QuickSort
       // Parse CLI arguments
       int[] numbers = FileOpener.open_file(args[0], Integer.parseInt(args[1]));
 
-      // Test sort ascending partition
+      // Less efficient example of quicksort
+      LOGGER.info("Start non-partitioned Quicksort.");
+      System.out.println("Non-partioned Quicksort:  ");
+      System.out.println(" ");
+
       start_time = System.currentTimeMillis();
       s1.no_partition_sort(numbers);
       end_time = System.currentTimeMillis();
       duration = (end_time - start_time);
-      System.out.println("Duration: " + duration + " ms");
 
-      // Test sort ascending partition
+      System.out.println("Duration: " + duration + " ms");
+      System.out.println(" ");
+      System.out.println(" ");
+      LOGGER.info("Completed non-partitioned Quicksort.");
+
+      // Most efficient example of quicksort
+      LOGGER.info("Start partitioned Quicksort.");
+      System.out.println("Partioned Quicksort:  ");
+      System.out.println(" ");
+
       start_time = System.currentTimeMillis();
       s1.partition_sort(numbers);
       end_time = System.currentTimeMillis();
       duration = (end_time - start_time);
-      System.out.println("Duration: " + duration + " ms");
 
+      System.out.println("Duration: " + duration + " ms");
+      System.out.println(" ");
+      System.out.println(" ");
+
+      LOGGER.info("Completed partitioned Quicksort.");
       LOGGER.info("Logging ended.");
       // Close log file
       fh.flush();
