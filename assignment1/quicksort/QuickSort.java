@@ -59,13 +59,18 @@ public class QuickSort
       LOGGER.setLevel(Level.INFO);
       LOGGER.info("Logging begins...");
 
+      long start_time, end_time, duration;
       QuickSort s1 = new QuickSort();
 
       // Parse CLI arguments
       int[] numbers = FileOpener.open_file(args[0], Integer.parseInt(args[1]));
 
       // Test sort ascending
+      start_time = System.nanoTime();
       s1.sort_asc(numbers);
+      end_time = System.nanoTime();
+      duration = (end_time - start_time);
+      System.out.println("Duration: " + duration / 1000000 + " ms");
 
       LOGGER.info("Logging ended.");
       // Close log file
