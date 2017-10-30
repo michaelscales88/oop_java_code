@@ -1,19 +1,22 @@
 package quadratic;
+import java.util.Vector;
 
 public class Quadratic
 {
 			// variables to hold terms a, b, c;
-	Double a, b, c;
-	Complex p, q;
+	private Double a, b, c;
+	private Complex p, q;
+	private Vector<String> results;
 
 			// constructor class for Quadratic
-	Quadratic(Double newA, Double newB, Double newC){
-		a = newA;
-		b = newB;
-		c = newC;
+	public Quadratic(Double[] abc){
+		a = abc[0];
+		b = abc[1];
+		c = abc[2];
+		results = new Vector<>();
 	}
 
-	private void calculate(){
+	public void calculate(){
 				// discriminant, everything under the square root
 		Double discriminant = (b * b) - (4 * a * c);
 				// term1, -b / 2a
@@ -40,28 +43,23 @@ public class Quadratic
 		}
 	}
 
-	private void displayResults(){
-		System.out.println("a: " + a);
-		System.out.println("b: " + b);
-		System.out.println("c: " + c);
-		System.out.println("Root 1, p = " + p.showNum());
+	public void displayResults(){
+		results.addElement("a: " + a + "\n");
+		results.addElement("b: " + b + "\n");
+		results.addElement("c: " + c + "\n");
+		results.addElement("Root 1, p = " + p.showNum() + "\n");
 		if( q != null )
-			System.out.println("Root 2, q = " + q.showNum());
+			results.addElement("Root 2, q = " + q.showNum() + "\n");
 	}
 
-	private void verifyResults(){
-		System.out.println( " p + q = " + p.add(q).showNum() );
-		System.out.println( " - b / a = " + (-(b / a)) );
-		System.out.println( " p * q = " + p.multiply(q).showNum() );
-		System.out.println( " c / a = " + (c / a) );
+	public void verifyResults(){
+		results.addElement("p + q = " + p.add(q).showNum() + "\n");
+		results.addElement("- b / a = " + (-(b / a)) + "\n");
+		results.addElement("p * q = " + p.multiply(q).showNum() + "\n");
+		results.addElement("c / a = " + (c / a) + "\n");
 	}
 
-	public static void main(String[] args){
-		Quadratic eqn = new Quadratic(Double.parseDouble(args[0]),
-												Double.parseDouble(args[1]),
-												Double.parseDouble(args[2]));
-		eqn.calculate();
-		eqn.displayResults();
-		eqn.verifyResults();
+	public Vector<String> getResults(){
+		return results;
 	}
 }
