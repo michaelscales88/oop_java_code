@@ -1,4 +1,5 @@
 package matrix;
+import java.util.Vector;
 
 class Matrix{
 	int rows;
@@ -25,6 +26,13 @@ class Matrix{
 		matrix = copy.matrix;
 	}
 
+	public void newMatrix(String newRows, String newCols){
+		rows = Integer.parseInt(newRows);
+		cols = Integer.parseInt(newCols);
+		matrix = new int[rows][cols];
+		randValues();
+	}
+
 	private void init(){
 		for( int x = 0; x < rows; x++ )
 			for( int y = 0; y < cols; y++ )
@@ -44,15 +52,17 @@ class Matrix{
 			System.out.println("Assignment coordinates out of bounds.");
 	}
 
-	public void showValues(){
+	public Vector<String> showValues(){
+		Vector<String> show = new Vector<>();
 		if((rows > 1) && (cols > 1)){
-			System.out.println("\nMatrix of size: " + rows + " x " + cols + "\n");
+			show.addElement("\nMatrix of size: " + rows + " x " + cols + "\n");
 			for( int x = 0; x < rows; x++ ){
 				for( int y = 0; y < cols; y++ )
-					System.out.printf(matrix[x][y] + "\t");
-				System.out.println();
+					show.addElement(matrix[x][y] + "\t");
+				show.addElement("\n");
 			}
 		}
+		return show;
 	}
 
 	public Matrix add(Matrix op){
