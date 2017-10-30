@@ -84,34 +84,64 @@ public class QuickSort
       printer.print(my_nums);
    }
 
+   void test_non_partition(int[] numbers)
+   {
+      long start_time, end_time, duration;
+      System.out.println("Non-partioned Quicksort:  ");
+      System.out.println(" ");
+
+      start_time = System.currentTimeMillis();
+      no_partition_sort(numbers);
+      end_time = System.currentTimeMillis();
+      duration = (end_time - start_time);
+
+      System.out.println("Duration: " + duration + " ms");
+      System.out.println(" ");
+      System.out.println(" ");
+   }
+
+   void test_partition(int[] numbers)
+   {
+      long start_time, end_time, duration;
+      System.out.println("Partioned Quicksort:  ");
+      System.out.println(" ");
+
+      start_time = System.currentTimeMillis();
+      partition_sort(numbers);
+      end_time = System.currentTimeMillis();
+      duration = (end_time - start_time);
+
+      System.out.println("Duration: " + duration + " ms");
+      System.out.println(" ");
+      System.out.println(" ");
+
+   }
+
    public static void main(String[] args) throws IOException
    {
       // Configure logger and handler
-      Handler fh = new FileHandler("quicksort/test.log", true);
+      Handler fh = new FileHandler("quicksort/quicksort.log", true);
       fh.setFormatter(new SimpleFormatter());
       LOGGER.addHandler(fh);
       LOGGER.setLevel(Level.INFO);
       LOGGER.info("Logging begins...");
 
-      long start_time, end_time, duration;
+      FileOpener rdr = new FileOpener(args[0], "quicksort/quicksort.out");
       QuickSort s1 = new QuickSort();
 
       // Parse CLI arguments
-      int[] numbers = FileOpener.open_file(args[0], Integer.parseInt(args[1]));
+      int[] nums1 = rdr.read();
+      int[] nums2 = nums1.clone();
 
-      // Test sort ascending partition
-      start_time = System.currentTimeMillis();
-      s1.no_partition_sort(numbers);
-      end_time = System.currentTimeMillis();
-      duration = (end_time - start_time);
-      System.out.println("Duration: " + duration + " ms");
+      // Less efficient example of quicksort
+      LOGGER.info("Start non-partitioned Quicksort.");
+      s1.test_non_partition(nums1);
+      LOGGER.info("Completed non-partitioned Quicksort.");
 
-      // Test sort ascending partition
-      start_time = System.currentTimeMillis();
-      s1.partition_sort(numbers);
-      end_time = System.currentTimeMillis();
-      duration = (end_time - start_time);
-      System.out.println("Duration: " + duration + " ms");
+      // Most efficient example of quicksort
+      LOGGER.info("Start partitioned Quicksort.");
+      s1.test_partition(nums2);
+      LOGGER.info("Completed partitioned Quicksort.");
 
       LOGGER.info("Logging ended.");
       // Close log file
