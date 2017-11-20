@@ -1,15 +1,25 @@
 package calendar;
 
-import java.text.SimpleDateFormat;
 import java.util.*;
-import javax.swing.JPanel;
+import java.awt.Color;
+import javax.swing.*;
 import org.jdatepicker.impl.*;
 import org.jdatepicker.util.*;
 import org.jdatepicker.*;
 
-public class CalendarWidget extends JPanel
+public class CalendarPanel extends JPanel 
 {
-   public JDatePickerImpl getCalendar() {
+   private JDatePickerImpl datePicker;
+
+   CalendarPanel() {
+      initPanel();
+   }
+
+   private void initPanel() {
+      // panel layout
+      setBackground(Color.gray);
+
+      // panel logic
       UtilDateModel model = new UtilDateModel(Calendar.getInstance().getTime());
       model.setSelected(true);
       Properties p = new Properties();
@@ -17,7 +27,9 @@ public class CalendarWidget extends JPanel
       p.put("text.month", "Month");
       p.put("text.year", "Year");
       JDatePanelImpl datePanel = new JDatePanelImpl(model, p);
-      JDatePickerImpl datePicker = new JDatePickerImpl(datePanel, new DateComponentFormatter());
-      return datePicker;
+      datePicker = new JDatePickerImpl(datePanel, new DateComponentFormatter());
+
+      add(datePicker);
+      setVisible(true);
    }
 }

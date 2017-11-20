@@ -9,7 +9,7 @@ apply plugin: 'maven'
 apply plugin: 'application'
 
 // Define the main class for the application
-mainClassName = 'calendar.AppointmentCalendar'
+mainClassName = 'calendar.Main'
 
 // In this section you declare where to find the dependencies of your project
 allprojects {

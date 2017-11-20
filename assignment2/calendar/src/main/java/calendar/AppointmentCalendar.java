@@ -2,8 +2,9 @@ package calendar;
 
 import java.io.IOException;
 import java.util.logging.*;
-import java.awt.FlowLayout;
 import java.awt.event.*;
+import java.awt.Color;
+import java.awt.BorderLayout;
 import javax.swing.*;
 
 public class AppointmentCalendar extends JFrame
@@ -25,34 +26,44 @@ public class AppointmentCalendar extends JFrame
       }
    }
 
-   public AppointmentCalendar()
-   {
-      AppointmentCalendar.initLogger();
+   AppointmentCalendar() {
       initUI();
    }
 
    private void initUI()
    {
+      // Configure top frame
       setTitle("Appointment Calendar");
-      setSize(300, 200);
       setLocationRelativeTo(null);
       setDefaultCloseOperation(EXIT_ON_CLOSE);
 
       // Bind startup events
       bindWindowEvents();
 
-      // Create layout
-      setLayout(new FlowLayout());
-
       // Set widgets
       initWidgets();
+
+      // set frame to content size
+      pack();
 
       // Display the window
       setVisible(true);
    }
 
    private void initWidgets() {
-      add(new CalendarWidget().getCalendar());
+      // calendar panel
+      final CalendarPanel calPanel = new CalendarPanel();
+
+      // appointmentbook panel
+      final AppointmentBook apptPanel = new AppointmentBook();
+
+      // button panel
+      final ButtonPanel btnPanel = new ButtonPanel();
+      btnPanel.linkPanel(apptPanel);
+
+      add(calPanel, BorderLayout.NORTH);
+      add(apptPanel, BorderLayout.CENTER);
+      add(btnPanel, BorderLayout.SOUTH);
    }
 
    private void bindWindowEvents() {
@@ -65,17 +76,6 @@ public class AppointmentCalendar extends JFrame
       addWindowListener(new WindowAdapter() {
          public void windowClosing(WindowEvent e) {
             LOGGER.info("Logging ends.");
-            System.exit(0);
-         }
-      });
-
-   }
-
-   public static void main(String args[])
-   {
-      SwingUtilities.invokeLater(new Runnable() {
-         public void run() {
-            AppointmentCalendar ex = new AppointmentCalendar();
          }
       });
    }
