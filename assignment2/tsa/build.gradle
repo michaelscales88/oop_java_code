@@ -27,6 +27,13 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+sourceSets {
+    test {
+        java {
+            srcDirs = ["tsa/App"]
+        }
+    }
+}
 // Define the main class for the application
-mainClassName = 'tsa.Main'
+mainClassName = 'tsa.App'
 
