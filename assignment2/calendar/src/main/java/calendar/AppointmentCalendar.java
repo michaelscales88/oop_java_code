@@ -56,6 +56,7 @@ public class AppointmentCalendar extends JFrame
 
       // appointmentbook panel
       final AppointmentBook apptPanel = new AppointmentBook();
+      //apptPanel.runTest();
 
       // button panel
       final ButtonPanel btnPanel = new ButtonPanel();
