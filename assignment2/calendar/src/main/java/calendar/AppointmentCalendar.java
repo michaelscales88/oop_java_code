@@ -4,13 +4,15 @@ import java.io.IOException;
 import java.util.logging.*;
 import java.awt.event.*;
 import java.awt.Color;
-import java.awt.BorderLayout;
+import java.awt.Container;
 import javax.swing.*;
 
-public class AppointmentCalendar extends JFrame
+public class AppointmentCalendar
 {
    private final static Logger LOGGER = Logger.getLogger(AppointmentCalendar.class.getName());
    private static FileHandler fh = null;
+   private JFrame frame;
+   private DateObserver dObs;
 
    public static void initLogger() {
       if (fh == null) {
@@ -33,48 +35,59 @@ public class AppointmentCalendar extends JFrame
    private void initUI()
    {
       // Configure top frame
-      setTitle("Appointment Calendar");
-      setLocationRelativeTo(null);
-      setDefaultCloseOperation(EXIT_ON_CLOSE);
+      frame = new JFrame("Appointment Calendar");
+      frame.setLocationRelativeTo(null);
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      Container contentPane = frame.getContentPane();
+      SpringLayout layout = new SpringLayout();
+      contentPane.setLayout(layout);
 
       // Bind startup events
-      bindWindowEvents();
+      bindFrameEvents();
 
       // Set widgets
-      initWidgets();
+      initWidgets(contentPane);
+      SpringUtilities.makeCompactGrid(contentPane,
+                                      3, 1,  // rows, cols
+                                      5, 5,  // initial x, y
+                                      5, 5); // xpad, ypad
 
       // set frame to content size
-      pack();
+      frame.pack();
 
       // Display the window
-      setVisible(true);
+      frame.setVisible(true);
    }
 
-   private void initWidgets() {
+   private void initWidgets(Container contentPane) {
       // calendar panel
       final CalendarPanel calPanel = new CalendarPanel();
 
       // appointmentbook panel
-      final AppointmentBook apptPanel = new AppointmentBook();
-      //apptPanel.runTest();
-
+      final AppointmentPanel apptPanel = new AppointmentPanel(new AppointmentBook());
       // button panel
       final ButtonPanel btnPanel = new ButtonPanel();
+
+      // set panel behavior
+      dObs = new DateObserver(calPanel.getObservable(),
+                              apptPanel);
+      calPanel.addObserver(dObs);
       btnPanel.linkPanel(apptPanel);
 
-      add(calPanel, BorderLayout.NORTH);
-      add(apptPanel, BorderLayout.CENTER);
-      add(btnPanel, BorderLayout.SOUTH);
+      contentPane.add(calPanel);
+      contentPane.add(apptPanel);
+      contentPane.add(btnPanel);
    }
 
-   private void bindWindowEvents() {
-      addWindowListener(new WindowAdapter() {
+   private void bindFrameEvents() {
+      frame.addWindowListener(new WindowAdapter() {
          public void windowOpened(WindowEvent e) {
             LOGGER.info("Logging begins.");
          }
       });
 
-      addWindowListener(new WindowAdapter() {
+      frame.addWindowListener(new WindowAdapter() {
          public void windowClosing(WindowEvent e) {
             LOGGER.info("Logging ends.");
          }

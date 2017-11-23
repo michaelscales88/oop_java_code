@@ -4,12 +4,13 @@ import java.util.logging.*;
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.Color;
+import java.awt.Window;
 
 public class ButtonPanel extends JPanel
 {
    private JButton hideBtn;
    private JButton closeBtn;
-   private final static Logger LOGGER = Logger.getLogger(" ");
+   //private final static Logger LOGGER = Logger.getLogger(" ");
 
    ButtonPanel() {
       initPanel();
@@ -23,18 +24,23 @@ public class ButtonPanel extends JPanel
       closeBtn = new JButton("Close");
       closeBtn.setBounds(50, 375, 250, 50);
 
+
       // panel logic
       closeBtn.addActionListener(new ActionListener() {
          @Override
          public void actionPerformed(ActionEvent e) {
-            LOGGER.info("Logging ends.");
-            System.exit(0);
+            closeWindow();
          }
       });
 
       add(hideBtn);
       add(closeBtn);
       setVisible(true);
+   }
+
+   public void closeWindow() {
+      Window win = SwingUtilities.windowForComponent(this);
+      win.dispatchEvent(new WindowEvent(win, WindowEvent.WINDOW_CLOSING));
    }
 
    public void linkPanel(JPanel panel) {
