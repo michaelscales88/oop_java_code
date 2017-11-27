@@ -14,6 +14,8 @@ public class DateObserver implements Observer
    }
 
    public void update(Observable obs, Object obj) {
-      if (obs == ov) panel.setList(ov.getValue());
+      // Update the ListView with the selected date
+      // from the CalendarWidget
+      if (obs == ov) panel.setApptList(ov.getValue());
    }
 }

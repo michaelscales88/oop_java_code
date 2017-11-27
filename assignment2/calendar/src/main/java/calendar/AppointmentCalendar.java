@@ -65,7 +65,8 @@ public class AppointmentCalendar
       final CalendarPanel calPanel = new CalendarPanel();
 
       // appointmentbook panel
-      final AppointmentPanel apptPanel = new AppointmentPanel(new AppointmentBook());
+      final AppointmentPanel apptPanel = new AppointmentPanel();
+
       // button panel
       final ButtonPanel btnPanel = new ButtonPanel();
 
@@ -74,6 +75,7 @@ public class AppointmentCalendar
                               apptPanel);
       calPanel.addObserver(dObs);
       btnPanel.linkPanel(apptPanel);
+      apptPanel.setApptList(calPanel.currDate());
 
       contentPane.add(calPanel);
       contentPane.add(apptPanel);

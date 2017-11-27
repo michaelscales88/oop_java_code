@@ -10,15 +10,16 @@ public class ObservedDate extends Observable
       this.date = date;
    }
 
-   public void setValue(String date)
-   {
+   public void setValue(String date) {
       this.date = date;
       setChanged();
       notifyObservers();
    }
 
-   public String getValue()
-   {
+   /*
+    * Getters for DateObserver
+    */
+   public String getValue() {
       return date;
    }
 }

@@ -39,6 +39,7 @@ public class ButtonPanel extends JPanel
    }
 
    public void closeWindow() {
+      // Dispatch event to exit the program
       Window win = SwingUtilities.windowForComponent(this);
       win.dispatchEvent(new WindowEvent(win, WindowEvent.WINDOW_CLOSING));
    }
