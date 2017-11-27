@@ -1,448 +1,66 @@
-Nov 20, 2017 6:43:05 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 6:43:19 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 20, 2017 8:00:51 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 8:04:08 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 8:07:23 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 8:08:51 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 8:08:56 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 20, 2017 9:19:52 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 9:20:08 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 20, 2017 9:25:16 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 9:25:25 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 20, 2017 9:30:17 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 9:30:26 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 20, 2017 9:45:24 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 9:50:07 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 10:46:34 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 10:47:49 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 20, 2017 10:47:58 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 20, 2017 10:48:02 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:07:28 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:07:43 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:07:51 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:07:58 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:09:37 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:09:39 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:12:40 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:13:02 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:24:14 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:24:19 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:29:55 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:30:01 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:32:24 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:32:33 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:38:40 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:39:09 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 12:28:29 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 12:28:47 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 12:50:20 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 12:50:35 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 2:51:13 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 2:51:47 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 2:56:05 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 2:56:16 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 3:07:06 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 3:07:21 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 3:07:46 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 3:08:01 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 3:28:56 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 3:29:00 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 4:02:49 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 4:02:51 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 4:16:23 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 4:16:29 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 5:03:19 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 5:03:21 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 5:03:44 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 5:03:50 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:10:11 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:10:42 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:11:56 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:12:03 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 9:20:57 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 9:21:14 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 10:13:49 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 10:13:58 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 10:16:31 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 10:16:44 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 22, 2017 10:20:58 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 22, 2017 10:21:09 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 12:54:56 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 1:06:54 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 11:01:00 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 11:01:10 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 11:02:04 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 11:02:15 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 11:07:22 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 11:07:44 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 11:17:44 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 11:19:33 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 11:45:32 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 11:45:58 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 12:18:15 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 12:18:26 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 1:04:48 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 1:04:57 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 1:47:50 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 1:47:59 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 2:05:03 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 2:05:25 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 2:25:14 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 2:25:23 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 2:28:07 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 2:28:12 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 2:53:46 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 2:53:56 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 2:54:27 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 2:54:39 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 2:56:40 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 2:56:44 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 2:59:53 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 3:00:24 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 3:05:44 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 3:05:50 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 3:06:24 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 3:06:33 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 3:08:53 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 3:10:31 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 3:47:43 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 3:47:52 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 3:48:03 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 3:48:08 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 4:01:15 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 4:01:16 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 4:35:51 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 4:35:56 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 7:37:35 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 7:37:37 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 23, 2017 7:48:27 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 23, 2017 7:48:29 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 24, 2017 10:33:16 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 24, 2017 10:33:38 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 24, 2017 10:36:23 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 24, 2017 10:36:34 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 24, 2017 10:47:14 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 24, 2017 10:47:17 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 24, 2017 1:36:06 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 24, 2017 1:36:29 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 24, 2017 1:40:00 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 24, 2017 1:40:49 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 24, 2017 1:58:02 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 24, 2017 1:59:32 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 24, 2017 3:50:39 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 24, 2017 3:50:41 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 24, 2017 3:52:31 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 24, 2017 3:53:01 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 24, 2017 4:14:33 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 24, 2017 4:14:34 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:19:23 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:19:37 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 5:15:29 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 5:16:48 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 6:17:40 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 6:18:46 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 6:19:21 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 6:20:09 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 6:21:06 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 6:21:15 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 6:23:25 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 6:24:11 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 6:25:15 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 6:25:27 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 6:43:06 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 6:45:22 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 6:50:55 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 6:59:29 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 7:00:28 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 7:04:51 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 7:05:29 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 7:06:17 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 7:07:11 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:05:48 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:06:21 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:33:45 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:34:10 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:37:31 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:38:03 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:38:09 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:38:41 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:40:33 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:42:08 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:44:46 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:45:21 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:53:48 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:54:57 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:56:06 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:56:34 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:57:19 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:57:43 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 8:58:43 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 8:59:28 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 9:00:55 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 9:01:10 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 9:03:27 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 9:04:08 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 9:31:51 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 9:32:06 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 9:42:21 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 9:42:44 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 9:43:54 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 9:44:25 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 9:44:33 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 9:45:07 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 9:45:30 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 9:46:19 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 9:52:28 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 9:53:36 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 10:00:53 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 10:03:02 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 10:50:46 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 10:51:00 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 10:53:15 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 10:53:25 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 10:53:58 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 10:54:30 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 10:55:00 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 10:55:24 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 25, 2017 11:21:00 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 25, 2017 11:21:12 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 26, 2017 10:10:09 AM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 26, 2017 10:10:48 AM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 26, 2017 1:07:20 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 26, 2017 1:07:47 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 26, 2017 1:08:35 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 26, 2017 1:08:50 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 26, 2017 1:10:26 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 26, 2017 1:11:06 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 26, 2017 1:17:40 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 26, 2017 1:18:28 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 26, 2017 6:18:40 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 26, 2017 6:19:29 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 26, 2017 6:25:59 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 26, 2017 6:26:13 PM calendar.AppointmentCalendar$2 windowClosing
-INFO: Logging ends.
-Nov 26, 2017 6:32:08 PM calendar.AppointmentCalendar$1 windowOpened
-INFO: Logging begins.
-Nov 26, 2017 6:32:48 PM calendar.AppointmentCalendar$2 windowClosing
+Nov 27, 2017 12:15:14 PM calendar.AppointmentCalendar log
+INFO: Set the selection for ListPanel for: 11-27-2017
+Nov 27, 2017 12:15:14 PM calendar.AppointmentCalendar$1 windowOpened
+INFO: Logging begins.
+Nov 27, 2017 12:15:52 PM calendar.AppointmentCalendar log
+INFO: Added an appt for: 11-27-2017
+Nov 27, 2017 12:15:52 PM calendar.AppointmentCalendar log
+INFO: Added appt in ListPanel.
+Nov 27, 2017 12:15:54 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:16:16 PM calendar.AppointmentCalendar log
+INFO: Empty view. Selecting empty appt.
+Nov 27, 2017 12:16:16 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:16:16 PM calendar.AppointmentCalendar log
+INFO: Removed an appt for: 11-27-2017
+Nov 27, 2017 12:16:16 PM calendar.AppointmentCalendar log
+INFO: Removed appt in ListPanel.
+Nov 27, 2017 12:16:28 PM calendar.AppointmentCalendar log
+INFO: Set the selection for ListPanel for: 11-16-2017
+Nov 27, 2017 12:16:28 PM calendar.AppointmentCalendar log
+INFO: Set the selection for ListPanel for: 11-16-2017
+Nov 27, 2017 12:16:45 PM calendar.AppointmentCalendar log
+INFO: Empty view. Selecting empty appt.
+Nov 27, 2017 12:16:45 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:16:45 PM calendar.AppointmentCalendar log
+INFO: Added an appt for: 11-16-2017
+Nov 27, 2017 12:16:45 PM calendar.AppointmentCalendar log
+INFO: Added appt in ListPanel.
+Nov 27, 2017 12:17:07 PM calendar.AppointmentCalendar log
+INFO: Empty view. Selecting empty appt.
+Nov 27, 2017 12:17:07 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:17:07 PM calendar.AppointmentCalendar log
+INFO: Added an appt for: 11-16-2017
+Nov 27, 2017 12:17:07 PM calendar.AppointmentCalendar log
+INFO: Added appt in ListPanel.
+Nov 27, 2017 12:17:08 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:17:10 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:17:12 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:17:27 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:19:57 PM calendar.AppointmentCalendar log
+INFO: Empty view. Selecting empty appt.
+Nov 27, 2017 12:19:57 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:19:57 PM calendar.AppointmentCalendar log
+INFO: Removed an appt for: 11-16-2017
+Nov 27, 2017 12:19:57 PM calendar.AppointmentCalendar log
+INFO: Removed appt in ListPanel.
+Nov 27, 2017 12:20:10 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:20:11 PM calendar.AppointmentCalendar log
+INFO: Empty view. Selecting empty appt.
+Nov 27, 2017 12:20:11 PM calendar.AppointmentCalendar log
+INFO: Setting appt in TextPanel.
+Nov 27, 2017 12:20:11 PM calendar.AppointmentCalendar log
+INFO: Removed an appt for: 11-16-2017
+Nov 27, 2017 12:20:11 PM calendar.AppointmentCalendar log
+INFO: Removed appt in ListPanel.
+Nov 27, 2017 12:20:20 PM calendar.AppointmentCalendar$2 windowClosing
 INFO: Logging ends.

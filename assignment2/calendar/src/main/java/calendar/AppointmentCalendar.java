@@ -9,7 +9,7 @@ import javax.swing.*;
 
 public class AppointmentCalendar
 {
-   private final static Logger LOGGER = Logger.getLogger(AppointmentCalendar.class.getName());
+   final static Logger LOGGER = Logger.getLogger(AppointmentCalendar.class.getName());
    private static FileHandler fh = null;
    private JFrame frame;
    private DateObserver dObs;
@@ -26,6 +26,10 @@ public class AppointmentCalendar
             LOGGER.addHandler(fh);
             LOGGER.setLevel(Level.INFO);
       }
+   }
+
+   public static void log(String text) {
+      LOGGER.info(text);
    }
 
    AppointmentCalendar() {

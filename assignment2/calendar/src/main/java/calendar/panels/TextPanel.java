@@ -8,7 +8,6 @@ import java.util.Observable;
 
 public class TextPanel extends JPanel
 {
-   private final static Logger LOGGER = Logger.getLogger(" ");
    private TextForm myForm;
 
    TextPanel(String[] labels, char[] mnemonics,
@@ -26,6 +25,6 @@ public class TextPanel extends JPanel
       myForm.setText(0, appt.getName());
       myForm.setText(1, appt.getTime());
       myForm.setText(2, appt.getNotes());
-      LOGGER.info("Setting appt in TextPanel.");
+      AppointmentCalendar.log("Setting appt in TextPanel.");
    }
 }

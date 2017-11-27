@@ -5,7 +5,6 @@ import javax.swing.*;
 
 public class InputPanel
 {
-   private final static Logger LOGGER = Logger.getLogger(" ");
    private TextForm myForm;
    private int result;
 

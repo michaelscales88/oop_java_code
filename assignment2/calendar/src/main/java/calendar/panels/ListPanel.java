@@ -12,7 +12,6 @@ import javax.swing.event.ListSelectionListener;
 
 public class ListPanel extends JPanel
 {
-   private final static Logger LOGGER = Logger.getLogger(" ");
    private ListView listView;
    private ObservedList obsList;
    private ObservedSelection obsSelect;
@@ -64,7 +63,7 @@ public class ListPanel extends JPanel
             iPanel.showPanel();
             Appointment appt = iPanel.getAppt();
             if (!appt.isBlank()) addAppt(appt);
-            else LOGGER.info("Discarding blank appointment.");
+            else AppointmentCalendar.log("Discarding blank appointment.");
          }
       });
       remBtn.addActionListener(new ActionListener() {
@@ -73,7 +72,7 @@ public class ListPanel extends JPanel
             // in our hashmap
             Object currVal = listView.currentValue();
             if (currVal != null) remAppt(currAppts.get(currVal.toString()));
-            else LOGGER.info("Cannot remove item from empty list.");
+            else AppointmentCalendar.log("Cannot remove item from empty list.");
          }
       });
       listView.getList().addListSelectionListener(new ListSelectionListener() {
@@ -86,7 +85,7 @@ public class ListPanel extends JPanel
                   String currVal = listView.currentValue().toString();
                   obsSelect.setValues(currAppts.get(currVal));
                } else {
-                  LOGGER.info("Realized I'm empty.");
+                  AppointmentCalendar.log("Empty view. Selecting empty appt.");
                   obsSelect.setValues(new Appointment());
                }
             }
@@ -101,7 +100,7 @@ public class ListPanel extends JPanel
       currAppts.put(appt.getName(), appt);
       listView.addItem(appt.getName());
       obsList.setValues("Add", currDate, appt);
-      LOGGER.info("Added appt in ListPanel.");
+      AppointmentCalendar.log("Added appt in ListPanel.");
    }
 
    public void remAppt(Appointment appt) {
@@ -111,7 +110,7 @@ public class ListPanel extends JPanel
       currAppts.remove(appt.getName());
       listView.remItem(appt.getName());
       obsList.setValues("Remove", currDate, appt);
-      LOGGER.info("Removed appt in ListPanel.");
+      AppointmentCalendar.log("Removed appt in ListPanel.");
    }
 
    public void setSelection(String date, ArrayList<Appointment> selection) {
@@ -128,7 +127,7 @@ public class ListPanel extends JPanel
          listView.addItem(appt.getName());
          currAppts.put(appt.getName(), appt);
       }
-      LOGGER.info("Set the selection for ListPanel for: " + currDate);
+      AppointmentCalendar.log("Set the selection for ListPanel for: " + currDate);
    }
 
    /*

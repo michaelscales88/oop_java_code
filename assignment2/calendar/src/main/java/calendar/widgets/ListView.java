@@ -7,7 +7,6 @@ import javax.swing.*;
 
 public class ListView 
 {
-   private final static Logger LOGGER = Logger.getLogger(" ");
    private JList list;
    private DefaultListModel<String> model;
 
@@ -27,15 +26,15 @@ public class ListView
    }
 
    public void addItem(String item) {
-      if (model.contains(item)) LOGGER.info("Cannot add item. \n" +
-                                            "Item already exists.");
+      if (model.contains(item)) AppointmentCalendar.log("Cannot add item. \n" +
+                                                        "Item already exists.");
       else model.addElement(item);
    }
 
    public void remItem(String item) {
       if (model.contains(item)) model.removeElement(item);
-      else LOGGER.info("Cannot remove item. \n" +
-                       "Item does not exist.");
+      else AppointmentCalendar.log("Cannot remove item. \n" +
+                                   "Item does not exist.");
    }
 
    public JList getList() {

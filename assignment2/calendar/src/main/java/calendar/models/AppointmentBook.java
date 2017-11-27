@@ -8,7 +8,6 @@ import javax.swing.*;
 
 public class AppointmentBook
 {
-   private final static Logger LOGGER = Logger.getLogger(" ");
    private final HashMap<String, ArrayList<Appointment>> myBook;
 
    AppointmentBook() {
@@ -35,7 +34,7 @@ public class AppointmentBook
       ArrayList<Appointment> currAppts = getAppts(key);
       currAppts.add(appt);
       myBook.put(key, currAppts);
-      LOGGER.info("Added an appt for: " + key);
+      AppointmentCalendar.log("Added an appt for: " + key);
    }
 
    public void remAppt(String key, Appointment appt) {
@@ -43,7 +42,7 @@ public class AppointmentBook
       if (myBook.containsKey(key)
           && myBook.get(key).contains(appt)) {
          myBook.get(key).remove(appt);
-         LOGGER.info("Removed an appt for: " + key);
-      } else LOGGER.info("Item does not exist");
+         AppointmentCalendar.log("Removed an appt for: " + key);
+      } else AppointmentCalendar.log("Item does not exist");
    }
 }
